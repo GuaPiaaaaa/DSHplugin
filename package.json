@@ -1,0 +1,36 @@
+{
+  "name": "dsh-github-hub",
+  "version": "1.0.0",
+  "description": "DSH GitHub 插件中心：登录 GitHub 账号并保存登录记录，搜索 GitHub / npm 上的 deepseek-harness (dsh-plugin) 插件，并一键安装到当前 DSH profile。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "github",
+    "plugin-market"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}

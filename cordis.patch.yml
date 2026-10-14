@@ -1,0 +1,15 @@
+# ============================================================================
+# dsh-github-hub —— DSH bundle patch
+# ============================================================================
+# 这个文件是插件的「挂载声明」：DSH 启动时按 bundle 层栈叠加各插件的 patch，
+# 本文件把 dsh-github-hub 这个 row 插入当前 profile 的配置树。
+#
+# 安装方式（二选一）：
+#   dsh plugin --profile desktop add dsh-github-hub          # 从 registry
+#   dsh plugin --profile desktop add link:<本目录绝对路径>     # 本地开发
+# 也可以在界面里「设置 → 插件」或插件市场里安装。
+# ============================================================================
+
+- insert:
+    - id: dsh-github-hub
+      name: dsh-github-hub
